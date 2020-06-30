@@ -101,7 +101,7 @@ cls
 info "demo3: use module"
 read
 cd module-demo
-run tree
+run tree -I .git -a
 info "task refers to external module call"
 read
 runcat highlight up.yml
@@ -118,7 +118,7 @@ run up mod list
 
 info "pull defined modules"
 run up mod pull
-run tree
+run tree -I .git -a
 
 info "now freeze and lock the modules' versions"
 run up mod lock
