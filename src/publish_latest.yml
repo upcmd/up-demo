@@ -1,0 +1,216 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: zsh
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /up-project/up
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 110
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 50
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  # frameBox:
+  #   type: floating
+  #   title: Terminalizer
+  #   style:
+  #     border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  frameBox:
+    type: solid
+    title: null
+    style:
+      boxShadow: none
+      margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 14
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 477
+    content: "                                                                                                              \r\r"
+  - delay: 50
+    content: "\e]133;D;0\a\e]1337;RemoteHost=stephencheng@stephens-MacBook-Pro.local\a\e]1337;CurrentDir=/up-project/up\a"
+  - delay: 185
+    content: "\r\e[0m\e[27m\e[24m\e[J\e]133;A\a\e[01;32mΞ\e[34m\e[01;32m \e[01;33m/up-project/up \e[32mgit\e[37m:\e[32m(\e[31mmaster\e[32m)\e[39m \e[32m▶\e[39m\e[00m \e]133;B\a\e[K\e[?1h\e=\e[?2004h"
+  - delay: 763
+    content: "\e[4mu\e[24m\e[90mp ngo Publish_latest\e[39m\e[20D"
+  - delay: 129
+    content: "\b\e[24m\e[32mu\e[32mp\e[39m"
+  - delay: 441
+    content: "\e[39m "
+  - delay: 275
+    content: "\e[39m\e[4ml\e[24m\e[90mi\e[90ms\e[90mt\e[39m\e[39m \e[39m \e[39m \e[39m \e[39m \e[39m \e[39m \e[39m \e[39m \e[39m \e[39m \e[39m \e[39m \e[39m \e[17D"
+  - delay: 189
+    content: "\b\e[4ml\e[39m\e[4mi\e[24m"
+  - delay: 152
+    content: "\b\b\e[24ml\e[24mi\e[39ms"
+  - delay: 72
+    content: "\e[39mt"
+  - delay: 158
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]133;C;\a"
+  - delay: 58
+    content: "loading [Config]:  ./upconfig.yml\r\nMain config:\r\n             Version -> 1.0.0\r\n              RefDir -> .\r\n             WorkDir -> cwd\r\n          AbsWorkDir -> /up-project/up\r\n            TaskFile -> up.yml\r\n             Verbose -> v\r\n          ModuleName -> self\r\n           ShellType -> /bin/sh\r\n       MaxCallLayers -> 8\r\n MaxModuelCallLayers -> 256\r\nwork dir: /up-project/up\r\nloading [Task]:  ./up.yml\r\nmodule: [self], instance id: [nonamed], exec profile: []\r\n-task list\r\n\e[33m     1  |                      deps: |protected| update key deps \r\n\e[0m\e[33m     2  |                     facts: |protected| gather facts \r\n\e[0m\e[92m     3  |            Publish_latest: |   public| build the latest unstable release \r\n\e[0m\e[33m     4  |                     build: |protected| build binary \r\n\e[0m\e[33m     5  |               buildDistro: |protected| build distro \r\n\e[0m\e[33m     6  |              version_info: |protected| prepare the version_info for release \r\n\e[0m\e[92m     7  |                   Publish: |   public| publish for github tagged version \r\n\e[0m\e[33m     8  |             release_local: |protected| release it to local path \r\n\e[0m\e[33m     9  |                     testc: |protected| test all the function tests \r\n\e[0m\e[92m    10  |                   Log_gen: |   public| generate all logs for the docs in build pipeline \r\n\e[0m\e[92m    11  |              Log_gen_test: |   public| generate all logs for the docs and test in Mac \r\n\e[0m\e[33m    12  |              log_gen_main: |protected| main entry to process different type of cases \r\n\e[0m\e[33m    13  |            log_gen_module: |protected|  \r\n\e[0m\e[33m    14  | generate_each_module_logs: |protected| generate logs for each module \r\n\e[0m\e[33m    15  |              log_gen_impl: |protected| run in up docker | generate logs \r\n\e[0m\e[33m    16  |             process_level: |protected| process different verbose level \r\n\e[0m\e[33m    17  |                     testf: |protected| test the exit scenarios due to different types of validation \r\n\e[0m\e[33m    18  |                     testp: |protected| test user cases with prompt \r\n\e[0m\e[33m    19  |                     testm: |protected| test specific module \r\n\e[0m\e[33m    20  |                     testx: |protected| test specific the function test \r\n\e[0m\e[33m    21  |                   testwip: |protected| test wip case \r\n\e[0m\e[33m    22  |                   wiptest: |protected| test wip \r\n\e[0m\e[33m    23  |                   testall: |protected| test all differnt type of tests \r\n\e[0m\e[33m    24  |    build_dev_docker_image: |protected| run in linux | build a nix docker image \r\n\e[0m\e[33m    25  |     load_dev_docker_image: |protected| run in linux | build a nix docker image \r\n\e[0m\e[92m    26  |          Add_MPL2_License: |   public| Add license notice to all golang file as a notice header \r\n\e[0m-\r\n\r\n                                                                                                              \r\r"
+  - delay: 41
+    content: "\e]133;D;0\a\e]1337;RemoteHost=stephencheng@stephens-MacBook-Pro.local\a\e]1337;CurrentDir=/up-project/up\a"
+  - delay: 114
+    content: "\r\e[0m\e[27m\e[24m\e[J\e]133;A\a\e[01;32mΞ\e[34m\e[01;32m \e[01;33m/up-project/up \e[32mgit\e[37m:\e[32m(\e[31mmaster\e[32m)\e[39m \e[32m▶\e[39m\e[00m \e]133;B\a\e[K\e[?1h\e=\e[?2004h"
+  - delay: 2689
+    content: "\e[4mu\e[24m\e[90mp list\e[39m\b\b\b\b\b\b"
+  - delay: 47
+    content: "\b\e[24m\e[32mu\e[32mp\e[39m"
+  - delay: 258
+    content: "\e[39m "
+  - delay: 299
+    content: "\e[39mn\e[90mg\e[90mo\e[90m \e[90mPublish_latest\e[39m\e[17D"
+  - delay: 493
+    content: "\e[39mg"
+  - delay: 104
+    content: "\e[39mo"
+  - delay: 725
+    content: "\e[39m \e[39mP\e[39mu\e[39mb\e[39ml\e[39mi\e[39ms\e[39mh\e[39m_\e[39ml\e[39ma\e[39mt\e[39me\e[39ms\e[39mt\a"
+  - delay: 905
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]133;C;\a"
+  - delay: 17
+    content: "loading [Config]:  ./upconfig.yml\r\nMain config:\r\n             Version -> 1.0.0\r\n              RefDir -> .\r\n             WorkDir -> cwd\r\n          AbsWorkDir -> /up-project/up\r\n            TaskFile -> up.yml\r\n             Verbose -> v\r\n          ModuleName -> self\r\n           ShellType -> /bin/sh\r\n       MaxCallLayers -> 8\r\n MaxModuelCallLayers -> 256\r\nwork dir: /up-project/up\r\n-exec task: Publish_latest\r\nloading [Task]:  ./up.yml\r\nmodule: [self], instance id: [nonamed], exec profile: []\r\n\e[94mTask3: [Publish_latest ==> Publish_latest: build the latest unstable release ]\r\n\e[0m\e[94m-Step1: [: delete the remote tag latest ]\r\n\e[0mcmd( 1):\r\n"
+  - delay: 5170
+    content: "\e[92mTo https://github.com/upcmd/up.git\r\n - [deleted]         latest\e[0m\r\n\e[32m .. ok\r\n\e[0mcmd( 2):\r\n"
+  - delay: 10
+    content: "\e[92mDeleted tag 'latest' (was b42eb24)\e[0m\r\n\e[32m .. ok\r\n\e[0mcmd( 3):\r\n"
+  - delay: 10
+    content: "\e[92m\e[0m\r\n\e[32m .. ok\r\n\e[0mcmd( 4):\r\n"
+  - delay: 5077
+    content: "\e[92mTo https://github.com/upcmd/up.git\r\n * [new tag]         latest -> latest\e[0m\r\n\e[32m .. ok\r\n\e[0m\e[92m. ok\r\n\e[0m\e[94m-Step2:\r\n\e[0m\e[94m~SubStep1: [:  ]\r\n\e[0m\e[31m WARN: [cmd] - [\r\ntemporarily deactivated]\r\n\e[0m\e[94m-Step3: [: build only the common distros ]\r\n\e[0m\e[35mdvar> distlist:\r\n\e[0m\e[97m\"\\n- darwin/amd64\\n\\n- linux/amd64\\n\\n- windows/amd64\\n\\n\"\r\n\r\n\e[0m-\r\n\e[33m\r\n- darwin/amd64\r\n\r\n- linux/amd64\r\n\r\n- windows/amd64\r\n\r\n\r\n\e[0m\e[35mdvar[object]> distlist:\r\n\e[0m\e[97m{\r\n  \"darwin/amd64\",\r\n  \"linux/amd64\",\r\n  \"windows/amd64\"\r\n}\r\n\r\n\e[0m\e[94m=Task5: [Publish_latest ==> buildDistro: build distro ]\r\n\e[0m\e[94m--Step1: [: build the binary to build directory ]\r\n\e[0mcmd( 1):\r\n\e[92mbuild version - latest\e[0m\r\n\e[32m .. ok\r\n\e[0mcmd( 2):\r\n"
+  - delay: 25
+    content: "\e[92m\e[0m\r\n\e[32m .. ok\r\n\e[0mcmd( 3):\r\n"
+  - delay: 8
+    content: "\e[92m\e[0m\r\n\e[32m .. ok\r\n\e[0m\e[92m. ok\r\n\e[0m\e[94m--Step2: [: default to build all types of distros supported\r\nif instructed the dist=common, then only build: linux, darwin and windows\r\n ]\r\n\e[0m\e[94m--Step1: [: build the supplied list of dist types ]\r\n\e[0m\e[94m~~SubStep1: [print:  ]\r\n\e[0m\e[92mbuilding [darwin/amd64 linux/amd64 windows/amd64]\e[0m\r\n\e[94m~~SubStep2: [printObj:  ]\r\n\e[0m\e[33mobject:\r\n distlist: {\r\n  \"darwin/amd64\",\r\n  \"linux/amd64\",\r\n  \"windows/amd64\"\r\n}\r\n\r\n\e[0m\e[94m--Step3:\r\n\e[0m\e[94m--Step1:\r\n\e[0m\e[35mdvar> void:\r\n\e[0m\e[97m\"_0: darwin\\n_1: amd64\\n\"\r\n\r\n\e[0m-\r\n\e[33m_0: darwin\r\n_1: amd64\r\n\r\n\e[0mcmd( 1):\r\n"
+  - delay: 5
+    content: "\e[92mbuild release version - latest > [ os = darwin, arch = amd64 ]\e[0m\r\n\e[32m .. ok\r\n\e[0mcmd( 2):\r\n"
+  - delay: 2487
+    content: "\e[92m\e[0m\r\n\e[32m .. ok\r\n\e[0m\e[92m. ok\r\n\e[0m\e[94m--Step1:\r\n\e[0m\e[35mdvar> void:\r\n\e[0m\e[97m\"_0: linux\\n_1: amd64\\n\"\r\n\r\n\e[0m-\r\n\e[33m_0: linux\r\n_1: amd64\r\n\r\n\e[0mcmd( 1):\r\n"
+  - delay: 6
+    content: "\e[92mbuild release version - latest > [ os = linux, arch = amd64 ]\e[0m\r\n\e[32m .. ok\r\n\e[0mcmd( 2):\r\n"
+  - delay: 2270
+    content: "\e[92m\e[0m\r\n\e[32m .. ok\r\n\e[0m\e[92m. ok\r\n\e[0m\e[94m--Step1:\r\n\e[0m\e[35mdvar> void:\r\n\e[0m\e[97m\"_0: windows\\n_1: amd64\\n\"\r\n\r\n\e[0m-\r\n\e[33m_0: windows\r\n_1: amd64\r\n\r\n\e[0mcmd( 1):\r\n\e[92mbuild release version - latest > [ os = windows, arch = amd64 ]\e[0m\r\n\e[32m .. ok\r\n\e[0mcmd( 2):\r\n"
+  - delay: 2333
+    content: "\e[92m\e[0m\r\n\e[32m .. ok\r\n\e[0m\e[92m. ok\r\n\e[0m\e[94m--Step4:\r\n\e[0mcmd( 1):\r\n"
+  - delay: 11
+    content: "\e[92mtotal 66648\r\n-rwxr-xr-x 1 stephencheng staff 21888356 Jul 22 22:46 up_darwin_amd64_latest\r\n-rwxr-xr-x 1 stephencheng staff 22069456 Jul 22 22:46 up_linux_amd64_latest\r\n-rwxr-xr-x 1 stephencheng staff 22131200 Jul 22 22:46 up_windows_amd64_latest\e[0m\r\n\e[32m .. ok\r\n\e[0m\e[92m. ok\r\n\e[0m\e[94m-Step4: [: enquire the latest release ]\r\n\e[0mcmd( 1):\r\n"
+  - delay: 428
+    content: "\e[92m{\r\n  \"message\": \"Not Found\",\r\n  \"documentation_url\": \"https://developer.github.com/v3/repos/releases/#get-a-release-by-tag-name\"\r\n}\e[0m\r\n\e[32m .. ok\r\n\e[0m\e[92m. ok\r\n\e[0m\e[94m-Step5: [: delete the latest release remotely if it exists ]\r\n\e[0m"
+  - delay: 5
+    content: "\e[35mdvar> releaseid:\r\n\e[0m\e[97m\"None\"\r\n\r\n\e[0m-\r\n\e[33mNone\r\n\e[0m"
+  - delay: 5
+    content: "\e[94m-Step1:\r\n\e[0m\e[94m~SubStep1: [print:  ]\r\n\e[0m\e[92mno latest release in remote, ignore\e[0m\r\n\e[94m-Step6: [: create the latest master release ]\r\n\e[0mcmd( 1):\r\n"
+  - delay: 555
+    content: "\e[92m{\r\n  \"url\": \"https://api.github.com/repos/upcmd/up/releases/28825511\",\r\n  \"assets_url\": \"https://api.github.com/repos/upcmd/up/releases/28825511/assets\",\r\n  \"upload_url\": \"https://uploads.github.com/repos/upcmd/up/releases/28825511/assets{?name,label}\",\r\n  \"html_url\": \"https://github.com/upcmd/up/releases/tag/latest\",\r\n  \"id\": 28825511,\r\n  \"node_id\": \"MDc6UmVsZWFzZTI4ODI1NTEx\",\r\n  \"tag_name\": \"latest\",\r\n  \"target_commitish\": \"master\",\r\n  \"name\": \"latest\",\r\n  \"draft\": false,\r\n  \"author\": {\r\n    \"login\": \"stephencheng\",\r\n    \"id\": 1396675,\r\n    \"node_id\": \"MDQ6VXNlcjEzOTY2NzU=\",\r\n    \"avatar_url\": \"https://avatars2.githubusercontent.com/u/1396675?v=4\",\r\n    \"gravatar_id\": \"\",\r\n    \"url\": \"https://api.github.com/users/stephencheng\",\r\n    \"html_url\": \"https://github.com/stephencheng\",\r\n    \"followers_url\": \"https://api.github.com/users/stephencheng/followers\",\r\n    \"following_url\": \"https://api.github.com/users/stephencheng/following{/other_user}\",\r\n    \"gists_url\": \"https://api.github.com/users/stephencheng/gists{/gist_id}\",\r\n    \"starred_url\": \"https://api.github.com/users/stephencheng/starred{/owner}{/repo}\",\r\n    \"subscriptions_url\": \"https://api.github.com/users/stephencheng/subscriptions\",\r\n    \"organizations_url\": \"https://api.github.com/users/stephencheng/orgs\",\r\n    \"repos_url\": \"https://api.github.com/users/stephencheng/repos\",\r\n    \"events_url\": \"https://api.github.com/users/stephencheng/events{/privacy}\",\r\n    \"received_events_url\": \"https://api.github.com/users/stephencheng/received_events\",\r\n    \"type\": \"User\",\r\n    \"site_admin\": false\r\n  },\r\n  \"prerelease\": false,\r\n  \"created_at\": \"2020-07-22T12:13:43Z\",\r\n  \"published_at\": \"2020-07-22T12:46:57Z\",\r\n  \"assets\": [\r\n\r\n  ],\r\n  \"tarball_url\": \"https://api.github.com/repos/upcmd/up/tarball/latest\",\r\n  \"zipball_url\": \"https://api.github.com/repos/upcmd/up/zipball/latest\",\r\n  \"body\": \"latest bleeding-edge release from master\"\r\n}\e[0m\r\n\e[32m .. ok\r\n\e[0m\e[92m. ok\r\n\e[0m\e[94m-Step7:\r\n\e[0m\e[35mdvar> releaseid:\r\n\e[0m\e[97m\"28825511\"\r\n\r\n\e[0m-\r\n\e[33m28825511\r\n\e[0m\e[94m-Step1: [: upload the most used distros only ]\r\n\e[0mcmd( 1):\r\n"
+  - delay: 10
+    content: "\e[92mupload for latest release - 28825511 for darwin-amd64\e[0m\r\n\e[32m .. ok\r\n\e[0mcmd( 2):\r\n"
+  - delay: 11427
+    content: "\e[92m{\"url\":\"https://api.github.com/repos/upcmd/up/releases/assets/23134732\",\"id\":23134732,\"node_id\":\"MDEyOlJlbGVhc2VBc3NldDIzMTM0NzMy\",\"name\":\"up_darwin_amd64_latest\",\"label\":\"\",\"uploader\":{\"login\":\"stephencheng\",\"id\":1396675,\"node_id\":\"MDQ6VXNlcjEzOTY2NzU=\",\"avatar_url\":\"https://avatars2.githubusercontent.com/u/1396675?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/stephencheng\",\"html_url\":\"https://github.com/stephencheng\",\"followers_url\":\"https://api.github.com/users/stephencheng/followers\",\"following_url\":\"https://api.github.com/users/stephencheng/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/stephencheng/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/stephencheng/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/stephencheng/subscriptions\",\"organizations_url\":\"https://api.github.com/users/stephencheng/orgs\",\"repos_url\":\"https://api.github.com/users/stephencheng/repos\",\"events_url\":\"https://api.github.com/users/stephencheng/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/stephencheng/received_events\",\"type\":\"User\",\"site_admin\":false},\"content_type\":\"application/json\",\"state\":\"uploaded\",\"size\":21888356,\"download_count\":0,\"created_at\":\"2020-07-22T12:46:58Z\",\"updated_at\":\"2020-07-22T12:47:09Z\",\"browser_download_url\":\"https://github.com/upcmd/up/releases/download/latest/up_darwin_amd64_latest\"}\e[0m\r\n\e[32m .. ok\r\n\e[0m\e[92m. ok\r\n\e[0m\e[94m-Step1: [: upload the most used distros only ]\r\n\e[0mcmd( 1):\r\n"
+  - delay: 5
+    content: "\e[92mupload for latest release - 28825511 for linux-amd64\e[0m\r\n\e[32m .. ok\r\n\e[0mcmd( 2):\r\n"
+  - delay: 11519
+    content: "\e[92m{\"url\":\"https://api.github.com/repos/upcmd/up/releases/assets/23134734\",\"id\":23134734,\"node_id\":\"MDEyOlJlbGVhc2VBc3NldDIzMTM0NzM0\",\"name\":\"up_linux_amd64_latest\",\"label\":\"\",\"uploader\":{\"login\":\"stephencheng\",\"id\":1396675,\"node_id\":\"MDQ6VXNlcjEzOTY2NzU=\",\"avatar_url\":\"https://avatars2.githubusercontent.com/u/1396675?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/stephencheng\",\"html_url\":\"https://github.com/stephencheng\",\"followers_url\":\"https://api.github.com/users/stephencheng/followers\",\"following_url\":\"https://api.github.com/users/stephencheng/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/stephencheng/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/stephencheng/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/stephencheng/subscriptions\",\"organizations_url\":\"https://api.github.com/users/stephencheng/orgs\",\"repos_url\":\"https://api.github.com/users/stephencheng/repos\",\"events_url\":\"https://api.github.com/users/stephencheng/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/stephencheng/received_events\",\"type\":\"User\",\"site_admin\":false},\"content_type\":\"application/json\",\"state\":\"uploaded\",\"size\":22069456,\"download_count\":0,\"created_at\":\"2020-07-22T12:47:09Z\",\"updated_at\":\"2020-07-22T12:47:20Z\",\"browser_download_url\":\"https://github.com/upcmd/up/releases/download/latest/up_linux_amd64_latest\"}\e[0m\r\n\e[32m .. ok\r\n\e[0m\e[92m. ok\r\n\e[0m\e[94m-Step1: [: upload the most used distros only ]\r\n\e[0mcmd( 1):\r\n"
+  - delay: 5
+    content: "\e[92mupload for latest release - 28825511 for windows-amd64\e[0m\r\n\e[32m .. ok\r\n\e[0mcmd( 2):\r\n"
+  - delay: 10363
+    content: "\e[92m{\"url\":\"https://api.github.com/repos/upcmd/up/releases/assets/23134738\",\"id\":23134738,\"node_id\":\"MDEyOlJlbGVhc2VBc3NldDIzMTM0NzM4\",\"name\":\"up_windows_amd64_latest\",\"label\":\"\",\"uploader\":{\"login\":\"stephencheng\",\"id\":1396675,\"node_id\":\"MDQ6VXNlcjEzOTY2NzU=\",\"avatar_url\":\"https://avatars2.githubusercontent.com/u/1396675?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/stephencheng\",\"html_url\":\"https://github.com/stephencheng\",\"followers_url\":\"https://api.github.com/users/stephencheng/followers\",\"following_url\":\"https://api.github.com/users/stephencheng/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/stephencheng/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/stephencheng/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/stephencheng/subscriptions\",\"organizations_url\":\"https://api.github.com/users/stephencheng/orgs\",\"repos_url\":\"https://api.github.com/users/stephencheng/repos\",\"events_url\":\"https://api.github.com/users/stephencheng/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/stephencheng/received_events\",\"type\":\"User\",\"site_admin\":false},\"content_type\":\"application/json\",\"state\":\"uploaded\",\"size\":22131200,\"download_count\":0,\"created_at\":\"2020-07-22T12:47:21Z\",\"updated_at\":\"2020-07-22T12:47:31Z\",\"browser_download_url\":\"https://github.com/upcmd/up/releases/download/latest/up_windows_amd64_latest\"}\e[0m\r\n\e[32m .. ok\r\n\e[0m\e[92m. ok\r\n\e[0m                                                                                                              \r\r"
+  - delay: 43
+    content: "\e]133;D;0\a\e]1337;RemoteHost=stephencheng@stephens-MacBook-Pro.local\a\e]1337;CurrentDir=/up-project/up\a"
+  - delay: 143
+    content: "\r\e[0m\e[27m\e[24m\e[J\e]133;A\a\e[01;32mΞ\e[34m\e[01;32m \e[01;33m/up-project/up \e[32mgit\e[37m:\e[32m(\e[31mmaster\e[32m)\e[39m \e[32m▶\e[39m\e[00m \e]133;B\a\e[K\e[?1h\e=\e[?2004h"
+  - delay: 1073
+    content: "\e[?2004l\r\r\n"
